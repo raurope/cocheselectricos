@@ -1,0 +1,13 @@
+{% for menu in menus %}
+    <p>
+        <a href="{{ menu.menu_name }}">
+            {{ menu.menu_name }}
+        </a>
+        items
+        {% for item in menu.items %}
+          <a href="{{ item.text }}">
+            {{ item.text }}
+          </a>
+        {% endfor %}
+    </p>
+{% endfor %}
