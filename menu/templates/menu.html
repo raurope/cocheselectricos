@@ -1,7 +1,7 @@
 <nav>
 {% for menu in menus %}
-    <p>
-        <a href="{{ menu.menu_name }}">
+
+        <a href="#">
             {{ menu.menu_name }}
         </a>
         <ul>
@@ -13,6 +13,6 @@
             </li>
           {% endfor %}
         </ul>
-    </p>
+
 {% endfor %}
 </nav>
