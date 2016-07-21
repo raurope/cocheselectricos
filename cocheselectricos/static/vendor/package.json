@@ -1,0 +1,11 @@
+{
+  "name": "cocheselectricos",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Raul Ros <raurope@gmail.com>",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+  }
+}
