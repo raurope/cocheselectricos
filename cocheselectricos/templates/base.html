@@ -1,5 +1,9 @@
 {% load static wagtailuserbar %}
 
+{% load header %}
+{% load menu %}
+{% load footer %}
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -26,7 +30,13 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
+        {% header %}
+
+        {% menu %}
+
         {% block content %}{% endblock %}
+
+        {% footer %}
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/cocheselectricos.js' %}"></script>
