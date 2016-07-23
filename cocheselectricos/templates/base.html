@@ -12,6 +12,9 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        {# External stylesheet #}
+        <link rel="stylesheet" type="text/css" href="{% static 'vendor/node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/cocheselectricos.css' %}">
 
@@ -27,6 +30,9 @@
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/cocheselectricos.js' %}"></script>
+
+        {# vendor Javascript #}
+        <script type="text/javascript" src="{% static 'vendor/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"} ></script>
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
