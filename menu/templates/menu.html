@@ -1,10 +1,17 @@
-<nav>
+<nav class="navbar">
+  <div class="container">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
 {% for menu in menus %}
-
+      <span class="icon-bar"></span>
+{% endfor %}
+    </button>
+    <div id="navbar" class="navbar-collapse collapse">
+{% for menu in menus %}
         <a href="#">
             {{ menu.menu_name }}
         </a>
-        <ul>
+        <ul class="nav navbar-nav">
           {% for item in menu.items %}
             <li>
               <a href="{{ item.link_external }}" target="_blank">
@@ -13,6 +20,7 @@
             </li>
           {% endfor %}
         </ul>
-
 {% endfor %}
+    </div>
+  </div>
 </nav>
