@@ -4,7 +4,8 @@
   "main": "index.js",
   "author": "Raul Ros <raurope@gmail.com>",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "1.12.4"
   },
   "devDependencies": {
   }
