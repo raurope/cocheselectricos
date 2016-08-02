@@ -3,9 +3,13 @@ body {
   background-color: #FFFFFF;
 }
 
-.container {
-
+@media (max-width: 500px) {
+  header .container {
+    color:red;
+  }
 }
+
+
 
 .logo-img {
     width: 31px;

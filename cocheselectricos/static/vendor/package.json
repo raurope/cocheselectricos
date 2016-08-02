@@ -5,7 +5,8 @@
   "author": "Raul Ros <raurope@gmail.com>",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "jquery": "1.12.4"
+    "jquery": "1.12.4",
+    "normalize.css": "4.1.1"
   },
   "devDependencies": {
   }
