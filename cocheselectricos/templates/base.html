@@ -16,12 +16,23 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        {# vendor Javascript #}
+        <script type="text/javascript" src="{% static 'vendor/node_modules/jquery/dist/jquery.min.js' %}"} ></script>
+        <script type="text/javascript" src="{% static 'vendor/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"} ></script>
+
+        {# Less and bootstrap #}
+        <link rel="stylesheet/less" href="{% static 'vendor/node_modules/bootstrap/less/bootstrap.less' %}">
+        <script src="{% static 'vendor/node_modules/less/dist/less.min.js' %}"></script>
+        
         {# External stylesheet #}
-        <link rel="stylesheet" type="text/css" href="{% static 'vendor/node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'vendor/node_modules/normalize.css/normalize.css' %}">
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/cocheselectricos.css' %}">
+
+        {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/cocheselectricos.js' %}"></script>
+
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -43,12 +54,7 @@
         {% footer %}
         </div>
 
-        {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/cocheselectricos.js' %}"></script>
 
-        {# vendor Javascript #}
-        <script type="text/javascript" src="{% static 'vendor/node_modules/jquery/dist/jquery.min.js' %}"} ></script>
-        <script type="text/javascript" src="{% static 'vendor/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"} ></script>
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}

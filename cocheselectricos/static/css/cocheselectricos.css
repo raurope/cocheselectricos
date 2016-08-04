@@ -1,15 +1,20 @@
 body {
   font-family: sans-serif;
   background-color: #FFFFFF;
+  min-width:400px;
 }
 
-@media (max-width: 500px) {
+header .container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px ) {
   header .container {
-    color:red;
+    margin-top:5px;
+    margin-bottom:5px;
   }
 }
-
-
 
 .logo-img {
     width: 31px;
@@ -21,5 +26,4 @@ body {
 .logo-text {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 12px;
 }
