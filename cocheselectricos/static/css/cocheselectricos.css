@@ -5,14 +5,14 @@ body {
 }
 
 header .container {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px ) {
   header .container {
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:0px;
+    margin-bottom:0px;
   }
 }
 
@@ -26,4 +26,7 @@ header .container {
 .logo-text {
     display: inline-block;
     vertical-align: middle;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 35px;
 }
