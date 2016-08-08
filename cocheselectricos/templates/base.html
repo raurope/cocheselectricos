@@ -3,6 +3,7 @@
 {% load header %}
 {% load menu %}
 {% load footer %}
+{% load compress %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -20,15 +21,17 @@
         <script type="text/javascript" src="{% static 'vendor/node_modules/jquery/dist/jquery.min.js' %}"} ></script>
         <script type="text/javascript" src="{% static 'vendor/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"} ></script>
 
-        {# Less and bootstrap #}
-        <link rel="stylesheet/less" href="{% static 'vendor/node_modules/bootstrap/less/bootstrap.less' %}">
-        <script src="{% static 'vendor/node_modules/less/dist/less.min.js' %}"></script>
-        
         {# External stylesheet #}
         <link rel="stylesheet" type="text/css" href="{% static 'vendor/node_modules/normalize.css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendor/node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'vendor/node_modules/bootstrap/dist/css/bootstrap-theme.min.css' %}">
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/cocheselectricos.css' %}">
+        <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/cocheselectricos.css' %}"> -->
+        {% compress css %}
+        <link rel="stylesheet" type="text/less" media="all" href="{% static 'css/cocheselectricos.less' %}" />        
+        {% endcompress %}
+
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/cocheselectricos.js' %}"></script>
@@ -45,7 +48,6 @@
         {% header %}
 
         {% menu %}
-
         <div class="container">
         {% block content %}{% endblock %}
         </div>
