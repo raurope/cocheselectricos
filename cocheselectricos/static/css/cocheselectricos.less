@@ -1,36 +1,9 @@
-@mycolor: red !important;
+@import "variables.less";
+@import "header.less";
+@import "menu.less";
 
 body {
   font-family: sans-serif;
   background-color: #FFFFFF;
   min-width:400px;
-  color: @mycolor;
-}
-
-header .container {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px ) {
-  header .container {
-    margin-top:0px;
-    margin-bottom:0px;
-  }
-}
-
-.logo-img {
-    width: 31px;
-    height: auto;
-    margin: 2px 4px 0 0;
-    padding: 0;
-}
-
-.logo-text {
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 35px;
-    color: @mycolor;
 }
