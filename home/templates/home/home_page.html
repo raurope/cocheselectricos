@@ -6,21 +6,24 @@
 
 {% block content %}
 
-    <div class="headlines">
-      <div class="first-headline"><img class="first-headline-img" src="{% static 'img/tesla-1.jpg' %}" alt="first"  /></div>
-      <div class="other-headlines" >
-         <div class="row-headline">
-           <div class="second-headline"><img class="second-headline-img" src="{% static 'img/kia-1.jpg' %}" alt="second"  /></div>
-           <div class="third-headline"><img class="third-headline-img" src="{% static 'img/nissan-1.jpg' %}" alt="third"  /></div>
-           <div class="clear"></div>
-         </div>
-         <div class="row-headline">
-           <div class="fourth-headline"><img class="fourth-headline-img" src="{% static 'img/bmw-1.jpg' %}" alt="fourth"  /></div>
-           <div class="fifth-headline"><img class="fifth-headline-img" src="{% static 'img/bmw-1.jpg' %}" alt="fifth"  /></div>
-           <div class="clear"></div>
-         </div>
+    <div class="headlines container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="first-headline-img" src="{% static 'img/tesla-1.jpg' %}" alt="first"  />
+        </div>
+        <div class="col-md-6">
+          <div class="row-headline">
+            <div class="second-headline"><img class="second-headline-img" src="{% static 'img/kia-1.jpg' %}" alt="second"  /></div>
+            <div class="third-headline"><img class="third-headline-img" src="{% static 'img/nissan-1.jpg' %}" alt="third"  /></div>
+            <div class="clear"></div>
+          </div>
+          <div class="row-headline">
+            <div class="fourth-headline"><img class="fourth-headline-img" src="{% static 'img/bmw-1.jpg' %}" alt="fourth"  /></div>
+            <div class="fifth-headline"><img class="fifth-headline-img" src="{% static 'img/bmw-1.jpg' %}" alt="fifth"  /></div>
+            <div class="clear"></div>
+          </div>
+        </div>
       </div>
-      <div class="clear"></div>
     </div>
 
     <div class="container">
