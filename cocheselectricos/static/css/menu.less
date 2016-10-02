@@ -4,10 +4,19 @@
   border-radius: 0px;
   border-bottom: 3px solid #F89406;
   margin-bottom: 0px;
+  @media (max-width: @screen-xs-max) {
+      border-top: 0px;
+  }
+}
+
+.navbar {
+  min-height: 0px;
 }
 
 .navbar-toggle {
-  margin-top: 17px;
+  @media (max-width: @screen-xs-max) {
+    margin-top: 17px;
+  }
 }
 
 #navbar {
@@ -25,25 +34,12 @@
    font-weight: bold;
    letter-spacing: 1px;
    line-height: 30px;
+   @media (max-width: @screen-xs-max) {
+     margin-left: 15px;
+   }
 
 }
 
 .glyphicon-menu-hamburger {
     font-size: 25px;
-}
-
-@media (max-width: @screen-xs-max) {
-  .navbar-custom {
-    border-top: 0px;
-  }
-
-  .navbar {
-    min-height: 0px;
-  }
-
-  .navbar-nav li a {
-    margin-left: 15px;
-  }
-
-
 }
