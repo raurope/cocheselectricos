@@ -6,12 +6,12 @@
 
 {% block content %}
 
-    <section class="headlines container-fluid">
+    <div class="headlines container-fluid">
       <div class="row">
         <div class="col-md-6">
           <img class="first-headline-img" src="{% static 'img/tesla-1.jpg' %}" alt="first"  />
           <article class="headline_description">
-            <h1 class="headline_description_label">Tesla Motors</h1>
+            <h2 class="headline_description_label">Tesla Motors</h2>
             <p class="headline_description_text">Tesla pondrá a disposición de los usuarios 2 nuevos cargadores</p>
           </article>
         </div>
@@ -20,14 +20,14 @@
             <div class="second-headline">
               <img class="second-headline-img" src="{% static 'img/kia-1.jpg' %}" alt="second"  />
               <article class="headline_description_top">
-                <h1 class="headline_description_label">Kia</h1>
+                <h2 class="headline_description_label">Kia</h2>
                 <p class="headline_description_text">La compañía compite por el sector eléctrico</p>
               </article>
             </div>
             <div class="third-headline">
               <img class="third-headline-img" src="{% static 'img/nissan-1.jpg' %}" alt="third"  />
               <article class="headline_description_top">
-                <h1 class="headline_description_label">Nissan</h1>
+                <h2 class="headline_description_label">Nissan</h2>
                 <p class="headline_description_text">La marca nipona referente en eléctricos</p>
               </article>
             </div>
@@ -37,25 +37,25 @@
             <div class="fourth-headline">
               <img class="fourth-headline-img" src="{% static 'img/bmw-1.jpg' %}" alt="fourth"  />
               <article class="headline_description_bottom">
-                <h1 class="headline_description_label">Bmw</h1>
+                <h2 class="headline_description_label">Bmw</h2>
                 <p class="headline_description_text">Los alemanes quieren su trocito de pastel</p>
               </article>
             </div>
             <div class="fifth-headline">
               <img class="fifth-headline-img" src="{% static 'img/bmw-1.jpg' %}" alt="fifth"  />
               <article class="headline_description_bottom">
-                <h1 class="headline_description_label">Avances</h1>
+                <h2 class="headline_description_label">Avances</h2>
                 <p class="headline_description_text">Nuevas baterías eléctricas</p>
-              </div>
+              </article>
             </div>
             <div class="clear"></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="container">
-      <h1>Coches eléctricos site!</h1>
+      <h2>Coches eléctricos site!</h2>
 
       <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).
 
