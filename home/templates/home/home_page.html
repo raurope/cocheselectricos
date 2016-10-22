@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% load side %}
+
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
@@ -54,8 +56,9 @@
       </div>
     </div>
 
+
     <div class="container">
-      <section>
+      <section style="float:left;">
         <h3>Previous news</h3>
         <article>
           <figure></figure>
@@ -68,6 +71,8 @@
           <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
         </article>
       </section>
-
+      {% side %}
     </div>
+
+
 {% endblock %}

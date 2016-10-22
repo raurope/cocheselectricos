@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'menu',
     'header',
     'footer',
+    'side',    
 
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
