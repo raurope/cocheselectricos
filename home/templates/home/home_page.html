@@ -58,20 +58,54 @@
 
 
     <div class="container">
-      <section style="float:left;">
-        <h3>Previous news</h3>
-        <article>
-          <figure></figure>
-          <h2></h2>
-          <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).</p>
-        </article>
-        <article>
-          <figure></figure>
-          <h2></h2>
-          <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
-        </article>
-      </section>
-      {% side %}
+      <div class="row">
+        <section class="col-md-9">
+          <h3 class="section-title section-title-line">Previous news</h3>
+          <div class="row space-bottom">
+            <div class="col-md-6">
+              <article>
+                  <h2>The first title</h2>
+                  <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).</p>
+                  <figure>
+                    <img style="width:100%;" src="{% static 'img/top-news.jpg' %}" alt="news-1"  />
+                  </figure>
+              </article>
+            </div>
+
+            <div class="col-md-6">
+              <article>
+                <h2>The second title</h2>
+                <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+                <figure>
+                  <img style="width:100%;" src="{% static 'img/top-news2.jpg' %}" alt="news-2"  />
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="row space-bottom">
+            <div class="col-md-6">
+              <article>
+                  <h2>The first title</h2>
+                  <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).</p>
+                  <figure>
+                    <img style="width:100%;" src="{% static 'img/top-news3.jpg' %}" alt="news-3"  />
+                  </figure>
+              </article>
+            </div>
+
+            <div class="col-md-6">
+              <article>
+                <h2>The second title</h2>
+                <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+                <figure>
+                  <img style="width:100%;" src="{% static 'img/top-news4.jpg' %}" alt="news-4"  />
+                </figure>
+              </article>
+            </div>
+          </div>
+        </section>
+        {% side %}
+      </div>
     </div>
 
 
