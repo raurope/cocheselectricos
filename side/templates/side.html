@@ -1,6 +1,25 @@
+{% load static %}
 <section class="side col-md-3">
-  <h4 class="section-title section-title-line">Social And Adds</h4>
+  <h4 class="section-title section-title-line">Conéctate</h4>
   <article>
-    <p>my lateral nav</p>
+    <div class="social-networks">
+      <ul>
+        <li>
+          <a href="http://www.facebook.com" target="_blank">
+            <img src="{% static 'img/social/facebook.svg' %}" width="50" height="50" alt="fcbk" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.twitter.com" target="_blank" >
+            <img src="{% static 'img/social/twitter.svg' %}" width="50" height="50" alt="twtr" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="adds">
+      <a href="#" target="_blank">
+        <img src="{% static 'img/wheels.jpg' %}" width="265" height="400" alt="add" />
+      </a>
+    </div>
   </article>
 </section>
